@@ -1,0 +1,121 @@
+
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CUERPO */
+body {
+    background: url('https://punto.mx/wp-content/uploads/2022/01/Box001-1000x600.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f5f5f5;
+    padding: 40px 20px;
+    backdrop-filter: brightness(0.8); /* oscurece ligeramente para mejorar legibilidad */
+}
+
+/* TÍTULO PRINCIPAL */
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 45px;
+    color: #ff3d3d;
+    text-shadow: 0 0 15px rgba(255, 61, 61, 0.7), 2px 2px 2px #000;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* FORMULARIO */
+form {
+    background-color: rgba(0, 0, 0, 0.75);
+    max-width: 500px;
+    margin: 0 auto 30px auto;
+    padding: 35px 30px;
+    border-radius: 14px;
+    box-shadow: 0 0 25px rgba(255, 61, 61, 0.4);
+    border-top: 6px solid #ff3d3d;
+    border-bottom: 6px solid #ff3d3d;
+}
+
+/* ETIQUETAS */
+label {
+    display: block;
+    font-size: 1.05rem;
+    font-weight: bold;
+    color: #ffc107;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* INPUTS Y SELECT */
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 22px;
+    border-radius: 10px;
+    border: 1px solid #888;
+    background-color: #222;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #ff3d3d;
+    box-shadow: 0 0 12px rgba(255, 61, 61, 0.6);
+    background-color: #111;
+}
+
+/* BOTÓN DE ENVIAR */
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #ff3d3d, #c62828);
+    color: #fff;
+    box-shadow: 0 0 15px rgba(255, 61, 61, 0.7);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #43a047, #2e7d32);
+    box-shadow: 0 0 20px #66bb6a;
+    transform: scale(1.06);
+}
+
+/* ENLACE VOLVER */
+a {
+    display: block;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffc107;
+    text-decoration: none;
+    margin-top: 28px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: #ff3d3d;
+    text-shadow: 0 0 10px #ff3d3d;
+}
+
+/* SELECTOR DESPLEGABLE */
+select {
+    appearance: none;
+}

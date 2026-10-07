@@ -1,0 +1,138 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fondo con imagen temática de boxeo */
+body {
+    background: url('https://rekoveryclinic.com/wp-content/uploads/2021/01/Cu%C3%A1les-son-las-lesiones-m%C3%A1s-habituales-en-la-pr%C3%A1ctica-del-boxeo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #f5f5f5;
+    padding: 30px 20px;
+    backdrop-filter: brightness(0.75);
+}
+
+/* Contenedor general */
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 45px;
+    color: #e53935;
+    text-shadow: 0 0 15px rgba(229, 57, 53, 0.8), 2px 2px 2px #000;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+}
+
+/* Formularios */
+form {
+    background-color: rgba(0, 0, 0, 0.8);
+    max-width: 100%;
+    margin: 0 auto 30px auto;
+    padding: 35px 30px;
+    border-radius: 14px;
+    box-shadow: 0 0 25px rgba(229, 57, 53, 0.5);
+    border-top: 5px solid #e53935;
+    border-bottom: 5px solid #e53935;
+}
+
+/* Etiquetas */
+label {
+    font-weight: 700;
+    font-size: 1.05rem;
+    display: block;
+    margin-bottom: 10px;
+    color: #ffc107;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Inputs y selects */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 22px;
+    border-radius: 10px;
+    border: 2px solid #444;
+    background-color: #222;
+    color: #fff;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #e53935;
+    box-shadow: 0 0 10px rgba(229, 57, 53, 0.6);
+    background-color: #111;
+}
+
+/* Botones */
+button {
+    width: 100%;
+    background-color: #e53935;
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding: 15px 0;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 800;
+    box-shadow: 0 0 15px rgba(229, 57, 53, 0.6);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background-color: #43a047;
+    box-shadow: 0 0 20px #66bb6a;
+    transform: scale(1.05);
+}
+
+/* Botón de regresar */
+button.regresar {
+    background-color: #444;
+    box-shadow: 0 0 12px #ffc107;
+    margin-top: 12px;
+}
+
+button.regresar:hover {
+    background-color: #ffc107;
+    color: #000;
+    box-shadow: 0 0 20px #ffeb3b;
+    transform: scale(1.05);
+}
+
+/* Enlace adicional */
+a {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #ffc107;
+    text-decoration: none;
+    margin-top: 25px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: #e53935;
+    text-shadow: 0 0 10px #e53935;
+}
+
+
