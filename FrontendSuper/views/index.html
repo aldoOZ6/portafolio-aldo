@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>SUPER</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>SUPER</h1>
+
+  <form action="/buscar" method="POST">
+    <input type="text" name="nombre" placeholder="Nombre del cliente" required>
+    <button type="submit">Buscar</button>
+    <button type="button" onclick="window.location.href='/'">Cerrar</button>
+  </form>
+
+  <% if (error) { %>
+    <p style="color:red;"><%= error %></p>
+  <% } %>
+
+  <% if (cliente) { %>
+    <h2>Cliente: <%= cliente.nombre %></h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Producto(s) comprado(s)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% productos.forEach(producto => { %>
+          <tr>
+            <td><%= producto %></td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  <% } %>
+</body>
+</html>
